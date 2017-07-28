@@ -17,26 +17,29 @@ public class UltimateAnimator {
         this.context = mContext;
     }
 
-    public void startBounceAnimation(View view){
+    public void startBounceAnimation(View view, long duration){
        Animation myAnim = AnimationUtils.loadAnimation(context, R.anim.bounce2);
 
         // Use bounce interpolator with amplitude 0.2 and frequency 20
-        BounceAnimator interpolator = new BounceAnimator(0.2, 20);
+        BounceAnimator interpolator = new BounceAnimator(0.5, 20);
         myAnim.setInterpolator(interpolator);
+        myAnim.setFillAfter(true);
+        myAnim.setDuration(duration);
         view.startAnimation(myAnim);
     }
 
-    public void startSqueezeBounceAnimation(View view){
+    public void startSqueezeBounceAnimation(View view, final long duration){
 
         view.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 if(motionEvent.getAction() == MotionEvent.ACTION_UP){
-                    startBounceAnimation(view);
-                    // Do what you want
+                    startBounceAnimation(view,500);
                     return true;
                 }else if (motionEvent.getAction()== MotionEvent.ACTION_DOWN){
                     Animation myAnim = AnimationUtils.loadAnimation(context, R.anim.bounce);
+                    myAnim.setFillAfter(true);
+                    myAnim.setDuration(duration);
                     view.startAnimation(myAnim);
                     return true;
                 }
