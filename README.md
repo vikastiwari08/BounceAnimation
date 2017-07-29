@@ -5,14 +5,16 @@ BounceAnimation is an android document Button bounce animaton library built on t
 <div align="center">
 
 <img width="50%" src="https://3.bp.blogspot.com/-8nWl20jpt7g/WXwzDBikFaI/AAAAAAAAOl8/g85rJfEeomcBCtnZr76tkDhbP_RtYD8NwCLcBGAs/s1600/ezgif.com-crop.gif" alt="Bounce Animation" title="Bounce Animation"></img>
+</div>
 
-# Using it in your project
+# Using this library
 - If you are using android studio, add the dependency to your main app build.gradle this way: 
 ```
 compile project(':BounceAnimaton')
+```
 
-- In your activity or fragment when you want to apply want to apply Bounce Animation on Button, ImageButton or any view :
-Just create a object of UltimateAnimator class call the methods of class, below is the sample code snippet:
+- In your activity or fragment when you want to apply want to apply Bounce Animation on Button or any view :</br>
+Just create a object of UltimateAnimator class call the methods of class, below is the sample code snippet:</br>
 Note: You have to pass your view object and duration as parametrers with in methods.
 ```java
        final ImageButton button = (ImageButton) findViewById(R.id.button);
@@ -28,4 +30,3 @@ Note: You have to pass your view object and duration as parametrers with in meth
         });
 ```
 - for more details [Click Here](http://ultimatedevil17.blogspot.com)
-
