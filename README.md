@@ -1,5 +1,5 @@
 # BounceAnimation
-BounceAnimation is an android document Button bounce animaton library built on top of Interpolator, using the app you will be able to apply a coool! Animation on your Button or another view 
+BounceAnimation is an android Button bounce animaton library built on top of Interpolator, using the app you will be able to apply a coool! Animation on your Button or another view 
 
 # Screenshots
 <div align="center">
@@ -29,4 +29,4 @@ Note: You have to pass your view object and duration as parametrers with in meth
             }
         });
 ```
-- for more details [Click Here](http://ultimatedevil17.blogspot.com)
+- for more details [Click Here](https://ultimatedevil17.blogspot.in/2017/07/how-to-apply-bounceanimation-on-button.html)
